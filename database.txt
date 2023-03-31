@@ -1,0 +1,80 @@
+Arduino Uno R3
+Arduino
+1300.00
+1.jpg
+
+Arduino Nano R3
+Arduino
+790.00
+2.jpg
+
+Arduino Mega 2560 R3
+Arduino
+1520.00
+3.jpg
+
+
+20×4 LCD Display (2004)
+Display
+530.00
+4.jpg
+
+16×2 LCD Display (1602)
+Display
+230.00
+5.jpg
+
+ATmega328P-PU Microcontroller
+Microcontroller
+320.00
+6.jpg
+
+RC522 13.56 Mhz RFID Reader
+Modules
+230.00
+7.jpg
+
+5V 4 Channel Relay Module
+Modules
+240.00
+8.jpg
+
+NE555 Timer IC
+IC
+16.00
+9.jpg
+
+L293D Motor Driver IC
+IC
+85.00
+10.jpg
+
+SIM900A GSM/GPRS Module
+Wireless
+1300.00
+11.jpg
+
+ESP8266 NodeMcu V3 Wifi Development Board
+Wireless
+550.00
+12.jpg
+
+DHT11 Temperature and Humidity Sensor
+Sensors
+140.00
+13.jpg
+
+Infrared Motion Sensor Switch
+Sensors
+790.00
+14.jpg
+
+HC-SR04 Ultrasonic Sensor
+Sensors
+900.00
+15.jpg
+
+MQ-2 Gas Sensor Module
+Sensors
+130.00
+16.jpg

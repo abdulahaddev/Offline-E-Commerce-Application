@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Amar Tech Shop</title>
+    <link rel="icon" type="image/x-icon" href="./Asset/Images/Site/favicon.ico">
+    <link rel="stylesheet" href="./Asset/Styles/style.css">
+
+    <script type="text/javascript" src="./Asset/Scripts/jquery.js"></script>
+</head>
+<body>
+    <header class="header-section">
+        <div class="top-header">
+            <div class="logo flex-center">
+                <img src="./Asset/Images/Site/logo-header.png" alt="">
+            </div>
+            <div class="search flex-center">
+                <input type="text" id="search-box" placeholder="Search for products" maxlength="50">
+                <span id="search-icon" class="search-icon">
+                    <i class="fa-regular fa-magnifying-glass"></i>
+                </span>
+                
+            </div>
+            <div class="right-header flex-center">
+                <a href="" id="cart-box">
+                    <span class="total-count fa-stack fa-2x has-badge" data-count="0">
+                        <i class="fa fa-shopping-cart fa-stack-lg red-cart"></i>
+                    </span>
+                </a>
+            </div>
+        </div>
+        <div class="navbar">
+            <nav class="nav">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Guideline</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-title-section">
+        <div class="page-title-container">
+            <h2 class="page-title">Category > Arduino</h2>
+        </div>
+    </section>
+
+
+    <section class="product-section width-90">
+        <div class="product-grid" id="product-grid">
+            
+            <!-- All products dynamically load from indexedDB
+            default structure:
+
+            <div class="product-container">
+                <div class="product">
+                    <div class="product-card">
+                        <img src="./Asset/Images/Products/1.jpg" onerror="this.onerror = null; this.src='./Asset/Images/Products/product-default-image.png'" alt="">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Arduino Uno R3</h3>
+                        <label class="category-label">category</label>
+                        <span class="price">৳ 500.00</span>
+                        <button class="add-to-cart" data-product-id="0">Add to cart</button>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </section>
+
+    <footer class="footer-section">
+        <div class="footer-container flex-center">
+            <p class="footer-text">
+                AMAR TECH SHOP &copy; 2022 DESIGNED & DEVELOPED BY <span class="footer-author"><a href="https://github.com/abdulahaddev">ABDUL AHAD</a> | OFFLINE E-COMMERCE SOLUTION</span>
+            </p>
+        </div>
+    </footer>
+
+
+    <div id="cart-sidebar" class="cart-sidebar">
+    
+        <div class="cart-header">
+            <div class="cart-title">
+                <h4>SHOPPING CART</h4>
+            </div>
+            <div class="cart-close">
+                <button id="sidebar-btn-close" class="btn-close" data-product-id="">X CLOSE</button>
+            </div>
+        </div>
+
+        <div class="cart-body">
+
+            <!-- Cart item loads dynamically from session storage
+            Default structure:
+            <div class="cart-item">
+                <div class="item-image">
+                    <img src="./Asset/Images/Products/1.jpg" alt="">
+                </div>
+                <div class="item-info">
+                    <h4 class="item-title">PIR Motion Detection Sensor</h4>
+                    <div class="item-counter">
+                        <button class="btn-minus">-</button>
+                        <input class="input-counter" value="0" type="text" name="" id="" readonly>
+                        <button class="btn-plus">+</button>
+                    </div>
+                    <div class="item-quantity-price"><span>1 x </span><span class="amount">৳ 100.00</span></div>
+                </div>
+                <div class="item-cancel">
+                    <i class="fa-solid fa-trash"></i>
+                </div>
+            </div> -->
+
+        </div>
+    
+        <div class="cart-footer">
+            <div class="cart-subtotal">
+                <span class="title">SUBTOTAL</span>
+                <h3>৳ <span class="subtotal">0.00</span></h3>
+            </div>
+            <button class="btn-view-cart">VIEW CART</button>
+            <button class="btn-check-out">CHECK OUT</button>
+        </div>
+    
+    </div>
+
+    <div id="transparent-cover" class="sidebar-transparent-cover"></div>
+
+    <script type="text/javascript" src="./Asset/Scripts/cart-sidebar.js"></script>
+    <script type="text/javascript" src="./Asset/Scripts/category-arduino.js"></script>
+    <script type="text/javascript" src="./Asset/Scripts/shopping-cart.js"></script>
+
+
+<script>
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Amar Tech Shop</title>
+    <link rel="icon" type="image/x-icon" href="./Asset/Images/Site/favicon.ico">
+    <link rel="stylesheet" href="./Asset/Styles/style.css">
+        <link rel="stylesheet" href="./Asset/Styles/checkout.css">
+
+    <script type="text/javascript" src="./Asset/Scripts/jquery.js"></script>
+</head>
+<body>
+    <header class="header-section">
+        <div class="top-header">
+            <div class="logo flex-center">
+                <img src="./Asset/Images/Site/logo-header.png" alt="">
+            </div>
+            <div class="search flex-center">
+                <input type="text" id="search-box" placeholder="Search for products" maxlength="50">
+                <span id="search-icon" class="search-icon">
+                    <i class="fa-regular fa-magnifying-glass"></i>
+                </span>
+                
+            </div>
+            <div class="right-header flex-center">
+                <a href="#" id="cart-box">
+                    <span id="c-top-counter" class="total-count fa-stack fa-2x has-badge" data-count="0">
+                        <i class="fa fa-shopping-cart fa-stack-lg red-cart"></i>
+                    </span>
+                </a>
+            </div>
+        </div>
+        <div class="navbar">
+            <nav class="nav">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Guideline</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-title-section">
+        <div class="page-title-container">
+            <h2 class="page-title">CHECKOUT</h2>
+        </div>
+    </section>
+
+    <section class="shopping-cart-section width-90">
+        <div class="shopping-cart-container">
+            <div class="cart-container">
+
+                <div id="c-cart-item-container" class="cart-item-container">
+                    <div class="customer-details">
+                        <div class="inputpair title">
+                            <label for="title" class="labell">Social Title</label>
+                            <div class="item item1">
+                                <input type="radio" name="title" value="Mr" id="Mr">
+                                <label for="Mr">Mr.</label>
+                            </div>
+
+                            <div class="item item2">
+                                <input type="radio" name="title" value="Mrs" id="Mrs">
+                                <label for="Mrs">Mrs</label>
+                            </div>
+                        </div>
+
+                        <div class="inputpair">
+                            <label for="firstname" class="labell">First Name</label>
+                            <input type="text" name="firstname" id="firstname" required autofocus />
+                        </div>
+
+                        <div class="inputpair">
+                            <label for="lastname" class="labell">Last Name</label>
+                            <input type="text" name="lastname" id="lastname" required autofocus />
+                        </div>
+
+                        <div class="inputpair">
+                            <label for="email" class="labell">Email</label>
+                            <input type="text" name="email" id="email" required />
+                        </div>
+                        <div class="inputpair">
+                            <label for="phone" class="labell">Phone</label>
+                            <input type="text" name="phone" id="phone" required />
+                        </div>
+
+                        <div class="inputpair">
+                            <label for="address" class="labell">Address</label>
+                            <textarea name="address" id="address" row="4" cols="20"></textarea>
+                        </div>
+                        <div class="inputpair">
+                            <label for="city" class="labell">City</label>
+                            <select name="city" id="city">
+                                <optgroup label="Dhaka">
+                                    <option>Savar</option>
+                                    <option>Narayanganj</option>
+                                    <option>Gazipuir</option>
+                                    <option>Demra</option>
+                                    <option>Manikganj</option>
+                                </optgroup>
+                                <optgroup label="Rajshahi">
+                                    <option>Pabna</option>
+                                    <option>SirajGanj</option>
+                                    <option>Rangpur</option>
+                                    <option>Bogra</option>
+                                    <option>Gaibandha</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                    
+                    </div>
+                </div>
+            </div>
+            <div class="cart-checkout-container">
+                <div class="cart-sidebar-container">
+
+                    <div class="c-sidebar-heading">
+                        <h1>Your Order</h1>
+                    </div>
+                    <div class="c-sidebar-subtotal">
+                        <h4>Subtotal</h4>
+                        <h3>৳ <span id="c-sidebar-subtotal">0.00</span></h3>
+                    </div>
+                    <div class="c-sidebar-shipping">
+                        <h4>Shipping</h4>
+                        <h3>Flat rate: <span class="flat-rate">৳ 100.00</span></h3>
+                    </div>
+                    <div class="c-sidebar-total">
+                        <h2>Total</h2>
+                        <h3>৳ <span id="c-sidebar-total">0.00</span></h3>
+                    </div>
+                    
+                    <div class="payment-method">
+                        <h2>Choose a payment method</h2>
+                        <div class="select-method">
+                            <div class="cc">
+                                <i class="fa-regular fa-credit-card"></i>
+                                <p>pay with credit card</p>
+                            </div>
+                            <div class="cod">
+                                <i class="fa-solid fa-circle-dollar"></i>
+                                <p>cash on delivery</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn-c-sidebar-checkout">PLACE ORDER</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-section">
+        <div class="footer-container flex-center">
+            <p class="footer-text">
+                AMAR TECH SHOP &copy; 2022 DESIGNED & DEVELOPED BY <span class="footer-author"><a href="https://github.com/abdulahaddev">ABDUL AHAD</a> | OFFLINE E-COMMERCE SOLUTION</span>
+            </p>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="./Asset/Scripts/checkout-page.js"></script>
+
+
+<script>
+
+</script>
+
+
+</body>
+</html>

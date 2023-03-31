@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Index Db</title>
+    <style type="text/css">
+        body {
+            font-family: "Century Gothic";
+            font-size: .9em;
+        }
+
+        #container {
+            width: 980px;
+            margin: 20px auto;
+        }
+
+        #left {
+            width: 680px;
+            float: left;
+            padding: 5px 10px 5px 0;
+        }
+
+        #right {
+            width: 280px;
+            float: right;
+            padding-left: 10px;
+        }
+
+        .label {
+            display: block;
+            font-weight: 700;
+        }
+        .category{
+            width: 62%;
+        }
+
+        input[type=text] {
+            border: 1px solid #ccc;
+        }
+
+        #tbl {
+            width: 100%;
+            border: 1px solid #ccc;
+        }
+
+        #tbl th {
+            border-right: 1px solid #ededed;
+            border-bottom: 1px solid #ededed;
+        }
+
+        #tbl td {
+            border-right: 1px solid #ededed;
+            border-bottom: 1px solid #ededed;
+        }
+
+        .edit {
+            background-color: green;
+            color: white;
+        }
+
+        .delete {
+            background-color: red;
+            color: white;
+        }
+    </style>
+    <script src="./Asset/Scripts/jquery.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <div id="left">
+            <h2>Contacts Book</h2>
+            <table id="tbl" cellpadding="3" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Product Title</th>
+                        <th>Product Category</th>
+                        <th>Product Price</th>
+                        <th>Product Image</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+        <div id="right">
+            <h2>Add New</h2>
+            <div>
+                <label class="label">Product Title</label>
+                <input type="text" id="product-title" />
+            </div>
+            <div>
+                <label class="label">Product Category</label>
+                <select class="category" name="category" id="product-category">
+                    <option value="">Select Category</option>
+                    <option value="Arduino">Arduino</option>
+                    <option value="Display">Display</option>
+                    <option value="Microcontroller">Microcontroller</option>
+                    <option value="Modules">Modules</option>
+                    <option value="IC">IC</option>
+                    <option value="Wireless">Wireless</option>
+                    <option value="Sensors">Sensors</option>
+                </select>
+            </div>
+            <div>
+                <label class="label">Product Price</label>
+                <input type="text" id="product-price" />
+            </div>
+            <div>
+                <label class="label">Product Image</label>
+                <input type="text" id="product-image" />
+            </div>
+            <div>
+                <input type="button" id="add" value="Add New" />
+            </div>
+        </div>
+    </div>
+    <script src="./Asset/Scripts/indexedDB.js"></script>
+</body>
+
+</html>

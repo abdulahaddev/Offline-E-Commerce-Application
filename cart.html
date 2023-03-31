@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Amar Tech Shop</title>
+    <link rel="icon" type="image/x-icon" href="./Asset/Images/Site/favicon.ico">
+    <link rel="stylesheet" href="./Asset/Styles/style.css">
+        <link rel="stylesheet" href="./Asset/Styles/cart.css">
+
+    <script type="text/javascript" src="./Asset/Scripts/jquery.js"></script>
+</head>
+<body>
+    <header class="header-section">
+        <div class="top-header">
+            <div class="logo flex-center">
+                <img src="./Asset/Images/Site/logo-header.png" alt="">
+            </div>
+            <div class="search flex-center">
+                <input type="text" id="search-box" placeholder="Search for products" maxlength="50">
+                <span id="search-icon" class="search-icon">
+                    <i class="fa-regular fa-magnifying-glass"></i>
+                </span>
+                
+            </div>
+            <div class="right-header flex-center">
+                <a href="" id="cart-box">
+                    <span id="c-top-counter" class="total-count fa-stack fa-2x has-badge" data-count="0">
+                        <i class="fa fa-shopping-cart fa-stack-lg red-cart"></i>
+                    </span>
+                </a>
+            </div>
+        </div>
+        <div class="navbar">
+            <nav class="nav">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Guideline</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-title-section">
+        <div class="page-title-container">
+            <h2 class="page-title">SHOPPING CART</h2>
+        </div>
+    </section>
+
+    <section class="shopping-cart-section width-90">
+        <div class="shopping-cart-container">
+            <div class="cart-container">
+
+                <div class="cart-heading-container">
+                    <div class="heading1"></div>
+                    <div class="heading2"></div>
+                    <div class="heading3">Product</div>
+                    <div class="heading4">Price</div>
+                    <div class="heading5">Quantity</div>
+                    <div class="heading6">Subtotal</div>
+                </div>
+                <div id="c-cart-item-container" class="cart-item-container">
+
+                    <!-- <div class="c-cart-item">
+                        <div class="c-item-delete">
+                            <a href="#" id="c-cart-item-delete" data-name=""><i class="fa-solid fa-trash"></i></a>
+                        </div>
+                        <div class="c-item-image">
+                            <img src="./Asset/Images/Products/1.jpg" alt="">
+                        </div>
+                        <div class="c-item-title">
+                            <h3>Arduino Uno R3</h3>
+                        </div>
+                        <div class="c-item-price">
+                            <h4>৳ <span id="c-item-price">100.00</span></h4>
+                        </div>
+                        <div class="c-item-counter">
+                            <button class="btn-minus" data-name="">-</button>
+                            <input class="input-counter" value="0" type="text" name="" id="" readonly>
+                            <button class="btn-plus" data-name="">+</button>
+                        </div>
+                        <div class="c-item-subtotal">
+                            <h3>৳ <span id="c-item-subtotal">100.00</span></h3>
+                        </div>
+                    </div>                     -->
+
+                </div>
+            </div>
+            <div class="cart-checkout-container">
+                <div class="cart-sidebar-container">
+
+                    <div class="c-sidebar-heading">
+                        <h1>CART TOTALS</h1>
+                    </div>
+                    <div class="c-sidebar-subtotal">
+                        <h4>Subtotal</h4>
+                        <h3>৳ <span id="c-sidebar-subtotal">0.00</span></h3>
+                    </div>
+                    <div class="c-sidebar-shipping">
+                        <h4>Shipping</h4>
+                        <h3>Flat rate: <span class="flat-rate">৳ 100.00</span></h3>
+                    </div>
+                    <div class="c-sidebar-total">
+                        <h2>Total</h2>
+                        <h3>৳ <span id="c-sidebar-total">0.00</span></h3>
+                    </div>
+                    <button class="btn-c-sidebar-checkout">PROCEED TO CHECKOUT</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-section">
+        <div class="footer-container flex-center">
+            <p class="footer-text">
+                AMAR TECH SHOP &copy; 2022 DESIGNED & DEVELOPED BY <span class="footer-author"><a href="https://github.com/abdulahaddev">ABDUL AHAD</a> | OFFLINE E-COMMERCE SOLUTION</span>
+            </p>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="./Asset/Scripts/cart-page.js"></script>
+
+
+<script>
+
+</script>
+
+
+</body>
+</html>
